@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1587921527 source:/home/user/Pulpit/Szablony/zadanie/main.cpp
+	<iostream>
+	"Wektor.hh"
+	"LZespolona.hh"
+
+1587913409 /home/user/Pulpit/Szablony/zadanie/Wektor.hh
+	<iostream>
+	<cmath>
+
+1587819513 /home/user/Pulpit/Szablony/zadanie/rozmiar.h
+
+1587921977 source:/home/user/Pulpit/Szablony/zadanie/Wektor.cpp
+	"Wektor.hh"
+	"cassert"
+	"LZespolona.hh"
+
+1587921485 /home/user/Pulpit/Szablony/zadanie/LZespolona.hh
+	<iostream>
+	<cmath>
+
+1587921485 source:/home/user/Pulpit/Szablony/zadanie/LZespolona.cpp
+	"LZespolona.hh"
+	<cassert>
+
+1587921485 source:/home/user/Pulpit/szablony/zadanie/LZespolona.cpp
+	"LZespolona.hh"
+	<cassert>
+
+1587921485 /home/user/Pulpit/szablony/zadanie/LZespolona.hh
+	<iostream>
+	<cmath>
+
+1587921527 source:/home/user/Pulpit/szablony/zadanie/main.cpp
+	<iostream>
+	"Wektor.hh"
+	"LZespolona.hh"
+
+1587913409 /home/user/Pulpit/szablony/zadanie/Wektor.hh
+	<iostream>
+	<cmath>
+
+1587921977 source:/home/user/Pulpit/szablony/zadanie/Wektor.cpp
+	"Wektor.hh"
+	"cassert"
+	"LZespolona.hh"
+
