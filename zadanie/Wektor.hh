@@ -25,7 +25,7 @@ class Wektor {
     TYP operator * (const Wektor<TYP, ROZMIAR> & W2) const; //skalarnie
     Wektor<TYP, ROZMIAR> operator / (double l) const;
 
-    double dlugosc() const;
+    //double dlugosc() const;
 
     bool operator == (const Wektor<TYP, ROZMIAR> & W2) const;
     bool operator != (const Wektor<TYP, ROZMIAR> & W2) const;

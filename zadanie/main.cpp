@@ -22,8 +22,8 @@ int main()
     Wektor<LZespolona, 5> Wek3(L,L4,L2,L3,L);
     cout << Wek3 << endl;
 
-    LZespolona LL;
-    LL = Wek2 * Wek3;
+    LZespolona LL = Wek2 * Wek3;
+    //LL = Wek2 * Wek3;
     cout << LL << endl;
 
     //double W = Wek1 * Wek;

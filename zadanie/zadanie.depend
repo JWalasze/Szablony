@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1587921527 source:/home/user/Pulpit/Szablony/zadanie/main.cpp
+1587984158 source:/home/user/Pulpit/Szablony/zadanie/main.cpp
 	<iostream>
 	"Wektor.hh"
 	"LZespolona.hh"
 
-1587913409 /home/user/Pulpit/Szablony/zadanie/Wektor.hh
+1587984122 /home/user/Pulpit/Szablony/zadanie/Wektor.hh
 	<iostream>
 	<cmath>
 
