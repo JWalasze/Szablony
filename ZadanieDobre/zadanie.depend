@@ -1,0 +1,74 @@
+# depslib dependency file v1.0
+1588499092 source:/home/user/Pulpit/Szablony/zadanie/main.cpp
+	<iostream>
+	"Wektor.hh"
+	"LZespolona.hh"
+	"Macierz.hh"
+	<fstream>
+	<cstdlib>
+	"UkladRownanLiniowych.hh"
+	<iomanip>
+
+1588348599 /home/user/Pulpit/Szablony/zadanie/Wektor.hh
+	<iostream>
+	<cmath>
+	"LZespolona.hh"
+
+1587819513 /home/user/Pulpit/Szablony/zadanie/rozmiar.h
+
+1588417584 source:/home/user/Pulpit/Szablony/zadanie/Wektor.cpp
+	"Wektor.hh"
+	"cassert"
+	"LZespolona.hh"
+
+1588356434 /home/user/Pulpit/Szablony/zadanie/LZespolona.hh
+	<iostream>
+	<cmath>
+
+1588417752 source:/home/user/Pulpit/Szablony/zadanie/LZespolona.cpp
+	"LZespolona.hh"
+	<cassert>
+
+1587921485 source:/home/user/Pulpit/szablony/zadanie/LZespolona.cpp
+	"LZespolona.hh"
+	<cassert>
+
+1587921485 /home/user/Pulpit/szablony/zadanie/LZespolona.hh
+	<iostream>
+	<cmath>
+
+1587921527 source:/home/user/Pulpit/szablony/zadanie/main.cpp
+	<iostream>
+	"Wektor.hh"
+	"LZespolona.hh"
+
+1587913409 /home/user/Pulpit/szablony/zadanie/Wektor.hh
+	<iostream>
+	<cmath>
+
+1587921977 source:/home/user/Pulpit/szablony/zadanie/Wektor.cpp
+	"Wektor.hh"
+	"cassert"
+	"LZespolona.hh"
+
+1588453934 source:/home/user/Pulpit/Szablony/zadanie/Macierz.cpp
+	"Wektor.hh"
+	"Macierz.hh"
+	"cassert"
+	"LZespolona.hh"
+
+1588348534 /home/user/Pulpit/Szablony/zadanie/Macierz.hh
+	"rozmiar.h"
+	"Wektor.hh"
+	<iostream>
+
+1588496414 source:/home/user/Pulpit/Szablony/zadanie/UkladRownanLiniowych.cpp
+	"UkladRownanLiniowych.hh"
+
+1588495176 /home/user/Pulpit/Szablony/zadanie/UkladRownanLiniowych.hh
+	<iostream>
+	<fstream>
+	"Macierz.hh"
+	"Wektor.hh"
+	"LZespolona.hh"
+
