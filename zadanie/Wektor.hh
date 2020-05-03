@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cmath>
+#include "LZespolona.hh"
 
 using namespace std;
 
@@ -21,11 +22,11 @@ class Wektor {
 
     Wektor<TYP, ROZMIAR> operator + (const Wektor<TYP, ROZMIAR> & W2) const;
     Wektor<TYP, ROZMIAR> operator - (const Wektor<TYP, ROZMIAR> & W2) const;
-    Wektor<TYP, ROZMIAR> operator * (double l) const;
+    Wektor<TYP, ROZMIAR> operator * (TYP l) const;
     TYP operator * (const Wektor<TYP, ROZMIAR> & W2) const; //skalarnie
-    Wektor<TYP, ROZMIAR> operator / (double l) const;
+    Wektor<TYP, ROZMIAR> operator / (TYP l) const;
 
-    //double dlugosc() const;
+    double dlugosc() const;
 
     bool operator == (const Wektor<TYP, ROZMIAR> & W2) const;
     bool operator != (const Wektor<TYP, ROZMIAR> & W2) const;

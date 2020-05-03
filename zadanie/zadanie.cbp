@@ -34,10 +34,13 @@
 		</Compiler>
 		<Unit filename="LZespolona.cpp" />
 		<Unit filename="LZespolona.hh" />
+		<Unit filename="Macierz.cpp" />
+		<Unit filename="Macierz.hh" />
+		<Unit filename="UkladRownanLiniowych.cpp" />
+		<Unit filename="UkladRownanLiniowych.hh" />
 		<Unit filename="Wektor.cpp" />
 		<Unit filename="Wektor.hh" />
 		<Unit filename="main.cpp" />
-		<Unit filename="rozmiar.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

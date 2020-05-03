@@ -44,18 +44,6 @@ TYP & Wektor<TYP, ROZMIAR>::operator [] (int index)
     return this->tab[index];
 }
 
-/*template <class TYP, int ROZMIAR>
-double Wektor<TYP, ROZMIAR>::dlugosc() const
-{
-   double Wynik = 0;
-
-   for(int i=0; i<ROZMIAR; ++i)
-   {
-   Wynik = Wynik + this->tab[i] * this->tab[i];
-   }
-   return sqrt(Wynik);
-}*/
-
 template <class TYP, int ROZMIAR>
 TYP Wektor<TYP, ROZMIAR>::operator * (const Wektor<TYP, ROZMIAR> & W2) const //SKALARNIE
 {
@@ -67,6 +55,42 @@ TYP Wektor<TYP, ROZMIAR>::operator * (const Wektor<TYP, ROZMIAR> & W2) const //S
    Wynik = Wynik + this->tab[i] * W2[i];
    }
    return Wynik;
+}
+
+template <class TYP, int ROZMIAR>
+double Wektor<TYP, ROZMIAR>::dlugosc() const
+{
+   double Wynik = 0;
+
+   for(int i=0; i<ROZMIAR; ++i)
+   {
+   Wynik = Wynik + this->tab[i] * this->tab[i];
+   }
+   return sqrt(Wynik);
+}
+
+template<>
+double Wektor<LZespolona, 5>::dlugosc() const
+{
+    double Wynik = 0;
+    for(int i=0; i<5; ++i)
+    {
+        LZespolona L = this->tab[i] * sprzezenie(tab[i]);
+        Wynik = Wynik + L.re;
+    }
+    return sqrt(Wynik);
+}
+
+template<>
+double Wektor<LZespolona, 3>::dlugosc() const
+{
+    double Wynik = 0;
+    for(int i=0; i<3; ++i)
+    {
+        LZespolona L = this->tab[i] * sprzezenie(tab[i]);
+        Wynik = Wynik + L.re;
+    }
+    return sqrt(Wynik);
 }
 
 template <class TYP, int ROZMIAR>
@@ -92,7 +116,7 @@ Wektor<TYP, ROZMIAR> Wektor<TYP, ROZMIAR>::operator - (const Wektor<TYP, ROZMIAR
 }
 
 template <class TYP, int ROZMIAR>
-Wektor<TYP, ROZMIAR> Wektor<TYP, ROZMIAR>::operator * (double l) const
+Wektor<TYP, ROZMIAR> Wektor<TYP, ROZMIAR>::operator * (TYP l) const
 {
     Wektor<TYP, ROZMIAR> Wynik;
     for(int i=0; i<ROZMIAR; ++i)
@@ -103,7 +127,7 @@ Wektor<TYP, ROZMIAR> Wektor<TYP, ROZMIAR>::operator * (double l) const
 }
 
 template <class TYP, int ROZMIAR>
-Wektor<TYP, ROZMIAR> Wektor<TYP, ROZMIAR>::operator / (double l) const
+Wektor<TYP, ROZMIAR> Wektor<TYP, ROZMIAR>::operator / (TYP l) const
 {
     Wektor<TYP, ROZMIAR> Wynik;
     for(int i=0; i<ROZMIAR; i++)
@@ -185,6 +209,7 @@ const Wektor<TYP, ROZMIAR> & Wektor<TYP, ROZMIAR>::zamien_kolumny() const
 template class Wektor<double,5>;
 template class Wektor<double,3>;
 template class Wektor<LZespolona,5>;
+template class Wektor<LZespolona,3>;
 
 
 template Wektor<double, 5> operator * (double l, Wektor<double, 5> W2);
@@ -192,10 +217,14 @@ template Wektor<double, 5> operator * (double l, Wektor<double, 5> W2);
 template std::ostream & operator << (std::ostream &Strm, const Wektor<double,5> & Wek);
 template std::ostream & operator << (std::ostream &Strm, const Wektor<double,3> & Wek);
 template std::ostream & operator << (std::ostream &Strm, const Wektor<LZespolona,5> & Wek);
+template std::ostream & operator << (std::ostream &Strm, const Wektor<LZespolona,3> & Wek);
+
 
 template std::istream & operator >> (std::istream &Strm, Wektor<double,3> & Wek);
 template std::istream & operator >> (std::istream &Strm, Wektor<double,5> & Wek);
 template std::istream & operator >> (std::istream &Strm, Wektor<LZespolona,5> & Wek);
+template std::istream & operator >> (std::istream &Strm, Wektor<LZespolona,3> & Wek);
+
 
 
 

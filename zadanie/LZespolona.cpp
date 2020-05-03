@@ -31,15 +31,30 @@ LZespolona & LZespolona::operator = (double  Liczba)
     return *this;
 }
 
-/*LZespolona operator  += (LZespolona  Skl1,  LZespolona  Skl2)
+LZespolona LZespolona::operator  += (LZespolona  L)
 {
-    LZespolona Wynik;
-    Wynik = 0;
-    Wynik.re = Skl1.re + Skl2.re;
-    Wynik.im = Skl1.im + Skl2.im;
-    Skl1 = Wynik;
-    return Skl1;
-}*/
+    this->re += L.re;
+    this->im += L.im;
+    return *this;
+}
+
+LZespolona LZespolona::operator *= (LZespolona L)
+{
+    *this = *this * L;
+    return *this;
+}
+
+bool operator == (LZespolona L1, double l)
+{
+    return L1.re==l && L1.im==0;
+}
+
+bool operator != (LZespolona L1, double l)
+{
+    if(L1==l)
+    return false;
+    else return true;
+}
 
 LZespolona operator + (LZespolona  Skl1,  LZespolona  Skl2)
 {

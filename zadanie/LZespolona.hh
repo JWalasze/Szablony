@@ -16,15 +16,12 @@
 struct  LZespolona {
     double   re;
     double   im;
-    explicit LZespolona();
-    explicit LZespolona(float r, float i);
+    LZespolona();
+    LZespolona(float r, float i);
     LZespolona & operator = (double  Liczba);
+    LZespolona operator  += (LZespolona L);
+    LZespolona operator  *= (LZespolona L);
 };
-
-
-/*
- * Dalej powinny pojawic sie zapowiedzi definicji przeciazen operatorow
- */
 
 LZespolona  operator + (LZespolona  Skl1,  LZespolona  Skl2);
 
@@ -38,9 +35,11 @@ LZespolona  operator / (LZespolona  Skl1,  double Skl2);
 
 LZespolona  operator * (LZespolona  Skl1,  double l);
 
-//LZespolona operator  += (LZespolona  Skl1,  LZespolona  Skl2);
-
 bool operator == (LZespolona L1, LZespolona L2);
+
+bool operator == (LZespolona L1, double l);
+
+bool operator != (LZespolona L1, double l);
 
 bool operator != (LZespolona L1, LZespolona L2);
 
